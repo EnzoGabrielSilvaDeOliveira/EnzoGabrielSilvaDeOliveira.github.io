@@ -6,9 +6,9 @@ document.addEventListener('DOMContentLoaded', function() {
     buttons.forEach((button, index) => {
         button.addEventListener('click', () => {
             alert(`Você clicou no BOTÃO ${index + 1}`);
-            inputField.value += `${index + 1}`; // Concatena o número do botão ao valor atual do campo de entrada
+            inputField.value += `${index + 1}`; 
             
-            // Atualiza o texto do elemento de exibição
+            
             const displayElement = document.getElementById('display');
             if (displayElement) {
                 displayElement.textContent = `Olá, ${inputField.value}`;
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     inputField.addEventListener('input', function() {
         const inputValue = inputField.value;
         
-        // Atualiza o texto do elemento de exibição
+        
         const displayElement = document.getElementById('display');
         if (displayElement) {
             if (inputValue) {
