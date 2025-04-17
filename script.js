@@ -1,36 +1,22 @@
-// Mostra uma mensagem na tela quando o usuário clica em um botão
-document.addEventListener('DOMContentLoaded', function() {
-    const buttons = document.querySelectorAll('#main-div button');
-    const inputField = document.getElementById('input-customizado');
-    
-    buttons.forEach((button, index) => {
-        button.addEventListener('click', () => {
-            alert(`Você clicou no BOTÃO ${index + 1}`);
-            inputField.value += `${index + 1}`; 
-            
-            
-            const displayElement = document.getElementById('display');
-            if (displayElement) {
-                displayElement.textContent = `Olá, ${inputField.value}`;
-            }
-        });
-    });
-});
+function adicionarValor(valor) {
+    const input = document.getElementById('input-customizado');
+    input.value += valor;
+    atualizarDisplay(input.value);
+}
 
-document.addEventListener('DOMContentLoaded', function() {
-    const inputField = document.getElementById('input-customizado');
-    
-    inputField.addEventListener('input', function() {
-        const inputValue = inputField.value;
-        
-        
-        const displayElement = document.getElementById('display');
-        if (displayElement) {
-            if (inputValue) {
-                displayElement.textContent = `Olá, ${inputValue}`;
-            } else {
-                displayElement.textContent = '';
-            }
-        }
-    });
-});
+function limpar() {
+    const input = document.getElementById('input-customizado');
+    input.value = '';
+    atualizarDisplay('');
+}
+
+function calcular() {
+    const input = document.getElementById('input-customizado');
+        input.value = eval(input.value) || '';
+        atualizarDisplay(input.value);
+    } 
+
+
+function atualizarDisplay(valor) {
+    document.getElementById('display').textContent = valor;
+}
