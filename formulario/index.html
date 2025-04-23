@@ -2,9 +2,12 @@
 <html>
   <head>
     <title>Aula de formulários</title>
-    <style>
-       
-    </style>
+  <style>
+      div {
+          width: 100%; 
+          margin: 20px;
+        }
+  </style>
     
   </head>
   <body>
@@ -50,17 +53,31 @@
       <input type = 'date' id = "" name = "DataLançamento" />
   </div>
 
-  <div>
-      <label for = "MesLançamento">Mes do lançamento:</label>
-      <input type = 'month' id = "mes" name = "MesLançamento" />
-  </div>
+   
+   <div>
+        <label for="mes">Mês</label>
+        <input type='month' id="mes" name="mes" />
+   </div>   
+
     
+    <div>
+        <label for="semana">Semana</label>
+        <input type='week' id="semana" name="semana" />
+    </div>   
 
-  <div>
-      <label for = "Semana">Semana Lançamento:</label>
-      <input type = 'week' id = "Semana" name = "Semana" />
-  </div>
+    
+      <div>
+          <label for="hora">Hora</label>
+          <input type='time' id="hora" name="hora" required />
+      </div>  
 
+    
+      <div>
+          <input type='hidden' id="usuarioLogado" name="usuarioLogado" 
+              value="khyquer" />
+      </div>   
+
+    
     
   <div>
       <button type="submit">Enviar</button>
