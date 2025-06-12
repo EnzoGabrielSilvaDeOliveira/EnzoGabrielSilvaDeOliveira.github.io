@@ -43,19 +43,19 @@
                     'titulo' => 'Como Instalar Python no Linux',
                     'data' => '10/06/2025',
                     'imagem' => 'img/python_linux.jpg',
-                    'conteudo' => 'Aprenda a instalar Python em distribuições Linux usando o terminal. Veja 					como configurar o ambiente e começar seus primeiros scripts de forma prática e rápida.',
+                    'conteudo' => 'Aprenda a instalar Python em distribuições Linux usando o terminal. Veja como configurar o ambiente e começar seus primeiros scripts de forma prática e rápida.',
                 ],
                 [
                     'titulo' => 'Comandos Linux Essenciais para Desenvolvedores',
                     'data' => '11/06/2025',
                     'imagem' => 'img/comandos_linux.jpg',
-                    'conteudo' => 'Conheça os comandos Linux mais utilizados no dia a dia de um 								desenvolvedor. Saiba como navegar entre pastas, criar arquivos, e muito mais!',
+                    'conteudo' => 'Conheça os comandos Linux mais utilizados no dia a dia de um desenvolvedor. Saiba como navegar entre pastas, criar arquivos, e muito mais!',
                 ],
                 [
                     'titulo' => 'Automação com Python no Linux',
                     'data' => '12/06/2025',
                     'imagem' => 'img/automacao_python.jpg',
-                    'conteudo' => 'Descubra como automatizar tarefas no Linux com scripts Python. Uma 							excelente forma de ganhar produtividade no seu ambiente de trabalho.',
+                    'conteudo' => 'Descubra como automatizar tarefas no Linux com scripts Python. Uma excelente forma de ganhar produtividade no seu ambiente de trabalho.',
                 ]
             ];
 
